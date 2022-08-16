@@ -1,3 +1,8 @@
+
+// reverse number
+// 473
+// reverse 374
+
 #include <bits/stdc++.h>
 
 int main(){
