@@ -1,7 +1,5 @@
 
 // reverse number
-// 473
-// reverse 374
 
 #include <bits/stdc++.h>
 
@@ -22,3 +20,6 @@ int main(){
 	
 	printf("reverse number is : %d\n", sum);
 }
+
+// input: 473
+// output: 374
