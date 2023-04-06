@@ -1,0 +1,404 @@
+push() , pop() , front() , empty() , size()
+
+01. Declaration
+02. Value insert
+03. Read front value
+04. Delete front value
+05. Print all element
+06. Size of queue
+07. Check empty
+08. Copy queue
+
+
+
+01. Declaration
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	
+	queue <int> q;
+}
+
+
+
+02. Value insert
+
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	
+	queue <int> q;
+	 
+	q.push( 1 );
+	q.push( 3 );
+	q.push( 5 );
+	q.push( 7 );
+	
+}
+
+
+
+
+
+
+
+
+
+03. Read front value
+
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	
+	queue <int> q;
+	 
+	q.push( 2 );
+	q.push( 3 );
+	q.push( 5 );
+	q.push( 7 );
+		
+	cout << q.front() << endl;
+}
+
+output:
+2
+
+
+
+04. Delete front element
+
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	
+	queue <int> q;
+	 
+	q.push( 1 );
+	q.push( 3 );
+	q.push( 5 );
+	q.push( 7 );
+		
+	q.pop();
+	
+	cout<<q.front()<<endl;
+}
+
+output:
+3
+
+
+
+05. print all element from top to bottom
+
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	
+	queue <int> q; 
+	 
+	q.push( 2 );
+	q.push( 3 );
+	q.push( 5 );
+	q.push( 7 );
+		
+	while( !q.empty()){
+		cout<<q.front()<<endl;
+		q.pop();
+	}	
+}
+
+output:
+2 
+3 
+5 
+7
+
+
+
+
+06.  Size of queue
+
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	
+	queue <int> q;
+	 
+	q.push( 2 );
+	q.push( 3 );
+	q.push( 5 );
+	q.push( 7 );
+
+	cout << q.size() << endl;	
+}
+
+output:  4
+
+
+
+07. Check empty
+
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	
+	queue <int> q, q1;
+	 
+	q.push( 2 );
+	q.push( 3 );
+	q.push( 5 );
+	q.push( 7 );
+
+	cout << q.empty() << endl;
+	cout << q1.empty() << endl;
+}
+
+output: 
+0
+1
+
+
+
+
+08.  Copy queue
+
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	
+	stack <int> st1;
+	stack <int> st2;
+	 
+	queue <int> q1, q2;
+	 
+	q1.push( 2 );
+	q1.push( 3 );
+	q1.push( 5 );
+	q1.push( 7 );
+	
+	q2 = q1;
+	
+	while( !q2.empty()){
+		cout<<q2.front()<<" ";
+		q2.pop();
+	}
+}
+
+output: 2 3 5 7
+
+
+
+
+
+-----------------   Dqueue   ------------------------
+
+
+
+
+01. Declaration
+02. Value insert front and back
+03. print front value and back value
+04. print all value front to back
+05. delete front value
+06. delete back value
+07. size of deque
+08. is empty deque
+
+
+01. Declaration
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	
+	deque <int> dq;
+}
+
+
+
+
+02. insert value front and back
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+	
+	deque <int> dq; 
+	
+	dq.push_front( 2 );
+	dq.push_front( 3 );
+	dq.push_front( 4 );
+	dq.push_back( 5 );
+	dq.push_back( 6 );
+
+}
+
+
+
+
+
+
+
+dq.push_front()
+dq.push_back()
+dq.front()
+dq.back() 
+dq.pop_front()
+dq.pop_back()
+dq.size()
+dq.empty()
+
+
+
+04. print all value front to back
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+	deque <int> dq; 
+	
+	dq.push_front( 2 );
+	dq.push_front( 3 );
+	dq.push_front( 4 );
+	dq.push_back( 5 );
+	dq.push_back( 6 );
+	
+	while( !dq.empty() ){
+		cout << dq.front()<<" ";
+		dq.pop_front();
+	}
+}
+
+output: 4 3 2 5 6
+
+
+
+
+
+
+
+
+
+
+03. print front value and back value
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+	
+	deque <int> dq; 
+	
+	dq.push_front( 2 );
+	dq.push_front( 3 );
+	dq.push_front( 4 );
+	dq.push_back( 5 );
+	dq.push_back( 6 );
+	
+	cout << dq.front() <<" "<< dq.back() <<endl;
+}
+
+
+output: 4 6
+
+
+
+
+05. delete front value
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+	
+	deque <int> dq; 
+	
+	dq.push_front( 2 );
+	dq.push_front( 3 );
+	dq.push_front( 4 );
+	dq.push_back( 5 );
+	dq.push_back( 6 );
+	
+	cout << dq.front() <<endl;
+	
+	dq.pop_front();
+
+	cout << dq.front() <<endl;
+}
+
+output: 
+4
+3
+06. delete back value
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+	
+	deque <int> dq; 
+	
+	dq.push_front( 2 );
+	dq.push_front( 3 );
+	dq.push_front( 4 );
+	dq.push_back( 5 );
+	dq.push_back( 6 );
+	
+	cout << dq.back() <<endl;
+	
+	dq.pop_back();
+
+	cout << dq.back() <<endl;
+}
+
+output:
+6
+5
+
+
+
+07. size of deque
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+	
+	deque <int> dq; 
+	
+	dq.push_front( 2 );
+	dq.push_front( 3 );
+	dq.push_front( 4 );
+	dq.push_back( 5 );
+	dq.push_back( 6 );
+	
+	cout << dq.size() <<endl;
+}
+
+otput: 5
+
+08. is empty deque
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+	
+	deque <int> dq; 
+	
+	dq.push_front( 2 );
+	dq.push_front( 3 );
+	dq.push_front( 4 );
+	dq.push_back( 5 );
+	dq.push_back( 6 );
+	
+	cout << dq.empty() <<endl;
+}
+
+output: 0
