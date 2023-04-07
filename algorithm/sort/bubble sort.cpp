@@ -1,5 +1,6 @@
 
 // Bubble sort
+// Time complexity O(n^2)
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -26,3 +27,15 @@ int main(){
 	for(auto u:v) cout <<u <<" ";
 	cout <<endl;
 }
+
+/*
+
+Input:
+6
+2 3 1 4 2 1
+
+Output:
+1 1 2 2 3 4
+
+*/
+
