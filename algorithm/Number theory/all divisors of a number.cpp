@@ -10,7 +10,7 @@ vector<int> dv[mx];
 
 int main(){
 	
-	int lim = 100;
+	int lim = 100;   // max = 1e6
 	
 	for(int i = 1; i <= lim; i++){
 		for(int j = i; j <= lim; j += i){
