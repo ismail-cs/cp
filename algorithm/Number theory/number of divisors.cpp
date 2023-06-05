@@ -1,7 +1,7 @@
 
 // find number of divisors of all numbers 1 to N
 // how many divisors of a number 
-
+// using harmony series
 
 #include <bits/stdc++.h>
 using namespace std;
