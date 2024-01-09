@@ -14,9 +14,9 @@ int main(){
 	memset(adj, 0, sizeof(adj));
 	
 	while(edge--){
-		int n1, n2;   cin >> n1 >> n2;
-		adj[n1][n2] = 1;
-		adj[n2][n1] = 1;
+		int a, b;   cin >> a >> b;
+		adj[a][b] = 1;
+		adj[b][a] = 1;
 	}
 	
 	for(int i=1; i<=node; i++){
