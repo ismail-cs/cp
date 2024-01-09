@@ -13,9 +13,9 @@ int main(){
 	int node, edge;   cin >> node >> edge;
 	
 	while(edge--){
-		int n1, n2;   cin >> n1 >> n2;
-		adj[n1].push_back(n2);
-		adj[n2].push_back(n1);
+		int a, b;   cin >> a >> b;
+		adj[a].push_back(b);
+		adj[b].push_back(a);
 	}
 	
 	for(int i=1; i<=node; i++){
