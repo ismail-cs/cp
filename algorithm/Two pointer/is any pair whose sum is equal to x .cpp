@@ -29,11 +29,12 @@ int main() {
 	for(auto &u : v){
 		cin >> u;
 	}
+	sort(v.begin(), v.end());
 	
 	if(solve(n, x, v)){
 		cout << "yes exists"<<endl;
 	}
-  else{
+  	else{
 		cout <<"not exists" <<endl;
 	}
   
