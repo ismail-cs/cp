@@ -9,23 +9,23 @@ const int mx = 10e5+123;
 vector<int> adj[mx];
 int lev[mx];
 
-void bfs(int s){
+void bfs(int a){
 	
 	memset( lev, -1, sizeof(lev) );
 	
-	lev[s] = 0;
-	queue<int> qe;
-	qe.push(s);
+	lev[a] = 0;
+	queue<int> q;
+	q.push(a);
 	
-	while( !qe.empty() ){
+	while( !q.empty() ){
 		
-		int a = qe.front();
-		qe.pop();
+		int x = q.front();
+		q.pop();
 		
-		for( auto u: adj[a] ){
+		for( auto u: adj[x] ){
 			if(lev[u] == -1){
-				lev[u] = lev[a] + 1;
-				qe.push(u);
+				lev[u] = lev[x] + 1;
+				q.push(u);
 			}
 		}
 	}
@@ -47,8 +47,8 @@ int main(){
 	
 	bfs(1);
 	
-	for(int i=1; i<=7; i++){
-		cout << lev[i] <<endl;
+	for(int i=1; i<=node; i++){
+		cout << i <<" : "<< lev[i] <<endl;
 	}
 	
 }
@@ -70,13 +70,13 @@ input:
 
 output:
 
-0
-1
-1
-1
-2
-1
-2
+1 : 0
+2 : 1
+3 : 1
+4 : 1
+5 : 2
+6 : 1
+7 : 2
 
 */
 
